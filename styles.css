@@ -3,20 +3,31 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: Righteous;
 }
 
 header {
+    display: initial;
     text-align: center;
-    background-color: #57040434;
+    background-color: #570404;
+}
+
+header img {
+    text-align: center;
 }
 
 body {
     background-color: #570404;
-    font-family: Righteous;
 }
 
 nav {
+    position: sticky;
+    top: 0;
     text-align: center;
+    background-color: #570404;
+    background-attachment: fixed;
+}
+header div {
 }
 
 nav ul {
@@ -26,14 +37,20 @@ nav ul {
     text-align: center;
     color: white;
     font-size: 2em;
-    padding: 3.0%;
-    height: 2em;
+    padding: 2% 3.0%;
+
 }
 
-nav ul li {
+nav li {
     display: inline;
     padding: 0.2em;
     margin: 0em 1em;
+    
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    text-shadow: 5px 5px 5px black;
 }
 
 nav li:hover {
@@ -54,7 +71,7 @@ audio {
     width: 100%;
     height: 0;
     padding-bottom:100%;
-    position:relative;
+    position: relative;
 }
 
 .animation_iframe {
@@ -63,24 +80,22 @@ audio {
 
 .container_music {
     position: fixed;
-    height: 400px;
     right: 0px;
-    top: 420px
-    
-
+    bottom: 280px;
 }
 
 .img_music {
     position: absolute;
     mix-blend-mode: soft-light;
-    right: 0px;
-    height: 320px;
+    right: 20px;
+    height: 300px;
 }
 
 .audio_music {
     position: absolute;
     mix-blend-mode: soft-light;
-    margin-top: 240px;
+    margin-top: 220px;
+
     padding-right: 20px;
     right: 0px
 }
@@ -89,12 +104,29 @@ audio {
     margin: 30px;
     padding: 15px;
     font-size: 1.5em;
+}
+
+section h1 {
     text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 5px black;
+}
+
+.imgwrap {
+    width: 600px;
+    height: 320px;
+    shape-outside: url("res/cloud1.png");
     background-image: url("res/cloud1.png");
-    background-position: left;
     background-repeat: no-repeat;
-    background-size: auto;
-    back
+}
+
+.imgwrap_left {
+    float: left;
+}
+
+.imgwrap_right {
+    float: right;
 }
 
 .snowflake {
