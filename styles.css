@@ -31,21 +31,20 @@ header div {
 }
 
 nav ul {
-    display: inline-block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     list-style-type: none;
     position: sticky;
     text-align: center;
     color: white;
     font-size: 2em;
     padding: 2% 3.0%;
-
 }
 
 nav li {
-    display: inline;
     padding: 0.2em;
     margin: 0em 1em;
-    
 }
 nav a {
     color: white;
@@ -102,8 +101,13 @@ audio {
 
 .container_page {
     margin: 30px;
+    margin-top: 100px;
     padding: 15px;
     font-size: 1.5em;
+}
+
+.container_page p {
+    margin-left: 10px;
 }
 
 section h1 {
